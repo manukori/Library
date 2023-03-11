@@ -1,0 +1,56 @@
+
+.flex
+{
+    /* background-image: url("https://www.teahub.io/photos/full/190-1905135_background-images-of-books.png"); */
+    /* background-image: url("https://www.marketingaiinstitute.com/hubfs/Imported_Blog_Media/fang-wei-lin-H1IRUS1vEFA-unsplash.webp"); */
+    background-image: url("https://media.istockphoto.com/id/1318403385/photo/book-background-blurred-open-book-on-a-table-in-a-university-or-school-library-in-the.jpg?s=612x612&w=0&k=20&c=aYRfdO4zUxvkjMzfZgYjPyDja95M5dxHQN3JWleEZQ4=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+    backdrop-filter: blur(5px);
+}
+.left
+{
+    margin-top: 15%;
+    font-size: 30px;
+
+}
+.list 
+{
+    margin-top: 7%;
+    font-weight: bold;
+}
+.list label
+{
+    line-height: 70px;
+    font-size: 25px;
+
+}
+.list input
+{
+    font-size: 15px;
+    /* padding: 5px; */
+    /* padding-left: 30%; */
+    border: none;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    outline: none;
+    /* line-height: 50px; */
+}
+.list button
+{
+    margin-left: 25%;
+    margin-top: 30px;
+    /* border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight:bolder;
+    background-color: white;
+    background-color: transparent;
+
+}

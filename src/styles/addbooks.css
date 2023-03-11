@@ -1,0 +1,48 @@
+
+.one
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-image:url("https://img.freepik.com/free-photo/top-view-books-with-copy-space_23-2148827187.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 45px;
+}
+.add
+{
+    margin-top: 15%;
+    font-size: 30px;
+}
+.form
+{
+    margin-top: 3%;
+}
+.form label
+{
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.form input
+{
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    background-color: transparent;
+}
+.form button
+{
+    margin-left:5%;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 5px 3px;
+    font-size: 15px;
+    font-weight:bolder;
+    background-color: white;
+    border-radius:5px;
+    background-color: transparent;
+
+}
