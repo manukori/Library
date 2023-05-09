@@ -4,25 +4,26 @@ import { useNavigate } from "react-router-dom";
 import "../styles/addbooks.css"
 
 const AddBook = () => {
-    let [title,setTitle]=useState("")
-    let [pagecount,setPagecount]=useState("")
-    let [author,setAuthor]=useState("")
-    let [category,setCategory]=useState("")
-    let [description,setDescription]=useState("")
-    let [imgurl,setImgurl]=useState("")
+    let [title,settitle]=useState("")
+    let [pageCount,setpageCount]=useState("")
+    let [authors,setauthors]=useState("")
+    let [categories,setcategories]=useState("")
+    let [shortDescription,setshortDescription]=useState("")
+    let [thumbnailUrl,setthumbnailUrl]=useState("")
 
     let navigate=useNavigate()
 
     let handlesubmit=(e)=>{
         e.preventDefault()
-        let data={title,pagecount,author,category,description,imgurl}
+        let data={title,pageCount,authors,categories,shortDescription,thumbnailUrl}
+        
         fetch ( "http://localhost:4000/books",{
             method:'POST',
-            header:{'content-type':'application/json'},
+            headers:{'content-Type':'application/json'},
             body:JSON.stringify(data)
         })
         alert("BOOK ADDED")
-        navigate('/add-book')
+        navigate('/book-list')
     }
     return ( 
     <div className="addbook">
@@ -34,24 +35,23 @@ const AddBook = () => {
         <div className="form">
             <form action="" onSubmit={handlesubmit}>
                 <label htmlFor="name">TITLE</label><br />
-                <input value={title} onChange={(e)=>setTitle(e.target.value)} type="texT"placeholder="TITLE" /><br />
+                <input value={title} onChange={(e)=>settitle(e.target.value)} type="texT"placeholder="TITLE" /><br />
 
                 <label htmlFor="name">PAGECOUNT</label><br />
-                <input value={pagecount} onChange={(e)=>setPagecount(e.target.value)} type="text"placeholder="PAGE COUNT" /><br />
+                <input value={pageCount} onChange={(e)=>setpageCount(e.target.value)} type="text"placeholder="PAGE COUNT" /><br />
 
                 <label htmlFor="name">AUTHOR</label><br />
-                <input value={author} onChange={(e)=>setAuthor(e.target.value)} type="text"placeholder="AUTHOR" /><br />
+                <input value={authors} onChange={(e)=>setauthors(e.target.value)} type="text"placeholder="AUTHOR" /><br />
 
                 <label htmlFor="name">CATEGORY</label><br />
-                <input value={category} onChange={(e)=>setCategory(e.target.value)} type="text"placeholder="CATEGORY" /><br />
+                <input value={categories} onChange={(e)=>setcategories(e.target.value)} type="text"placeholder="CATEGORY" /><br />
 
                 <label htmlFor="name">DESCRIPTION</label><br />
-                <input value={description} onChange={(e)=>setDescription(e.target.value)} type="text" placeholder="DESCRIPTION" /><br />
+                <input value={shortDescription} onChange={(e)=>setshortDescription(e.target.value)} type="text" placeholder="DESCRIPTION" /><br />
 
                 <label htmlFor="name">IMAGEURL</label><br />
-                <input value={imgurl} onChange={(e)=>setImgurl(e.target.value)} type="text"placeholder="IMAGEURL" /><br />
-                <button>ADD BOOKS</button>
-                <button>DELETE</button> 
+                <input value={thumbnailUrl} onChange={(e)=>setthumbnailUrl(e.target.value)} type="text"placeholder="IMAGEURL" /><br />
+                <button type="submit">ADD BOOKS</button>
                 
             </form>
         </div>

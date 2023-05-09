@@ -20,18 +20,18 @@ const Login = () => {
         <section>
         <div className="bg"></div>
         <div className="login">
-            {/* <div className="image">
-            <img src="https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style={{width:"300px",height:"500px"}} />
-            </div> */}
-             <h1>LOGIN</h1>
-                <form action="" onSubmit={submit}>
+                <h1>USER LOGIN</h1>
+            <form action="" onSubmit={submit}>
                 <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" placeholder="Enter Email"/><br />
                 <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Enter Password"/><br />
-                <button>LogIn</button>
+                <button>LOG IN</button>
             </form>
-            {/* <div className="login_form">
-               
-          </div> */}
+            <p className="text">―――Or Login Using―――</p>
+
+            <div className="link">
+                <div className="facebook"></div>
+                <div  className="google"></div>
+            </div>
        </div> 
     </section>   
        

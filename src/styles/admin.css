@@ -40,7 +40,10 @@
     cursor: pointer;
 
 }
-
+.over button:hover
+{
+background-color: green;
+}
 
 
 
@@ -99,7 +102,10 @@
     color: white;
     margin-top: -15px;
 }
-
+.over2 button:hover
+{
+background-color:rgb(250, 87, 115);
+}
 
 
 
@@ -146,7 +152,7 @@
     cursor: pointer;
     /* font-weight: bold; */
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid gray;
     /* margin-left: 580px; */
     text-decoration: none;
     color: gray;
@@ -154,8 +160,8 @@
 }
 .over3 button:hover
 {
-    color: black;
-    /* background-color: white; */
+    color: white;
+    background-color: gray;
 }
 
 
@@ -197,6 +203,8 @@
     border: transparent;
     margin-left: 50px;
     background-color: white;
+    color: blue;
+    cursor: pointer;
 } 
 
 
@@ -237,6 +245,8 @@
     border: transparent;
     margin-left: 50px;
     background-color: white;
+    color: blue;
+    cursor: pointer;
 } 
 
 
@@ -277,6 +287,8 @@
     border: transparent;
     margin-left: 50px;
     background-color: white;
+    color: blue;
+    cursor: pointer;
 } 
 
 .over7
@@ -316,6 +328,8 @@
     border: transparent;
     margin-left: 50px;
     background-color: white;
+    color: blue;
+    cursor: pointer;
 } 
 
 .box1
@@ -328,7 +342,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.footer
+.footer1
 {
     background-color: #019875;
     display: flex;
@@ -337,11 +351,11 @@
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.footer h2
+.footer1 h2
 {
     margin-left:220px;
     margin-top: 40px;
 }
-.footer p{
+.footer1 p{
     margin-left: 300px;
 }

@@ -1,54 +1,86 @@
 .bg 
 {
-background-image: url("https://static01.nyt.com/images/2015/10/24/opinion/24manguel/24manguel-superJumbo.jpg");
+background-image: url("https://cdn.pixabay.com/photo/2021/01/21/16/49/books-5937823_960_720.jpg");
 height: 690px;
 width: 1360px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-filter: blur(2px);
-/* -webkit-filter: blur(8px); */
+/* filter: blur(2px);
+-webkit-filter: blur(8px); */
 }
+
 .login
 {
-    /* display: inline-flex; */
     position: absolute;
-    top: 30%;
-    left: 43%;
-    line-height: 50px;
-    /* border: 3px solid BLACK; */
+    margin-top: -38%;
+    margin-left: 10%;
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 0 7px 0.5px gray;
+    border-radius: 15px;
 }
 .login h1
 {
-    font-size: 40px;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: underline;
+margin-left: 75px;
+text-decoration: underline;
 }
 .login input
 {
-    padding: 9px;
-    font-size: 15px;
-    border-radius: 9px;
-    border: none;
-    
+    /* border-radius: 5px; */
+    text-decoration: none;
+    /* border: transparent; */
+    padding: 10px 10px ;
+    margin: 10px 55px;
+
 }
 .login button
 {
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 9px;
-    margin-left: 65px;
-    border: none;
-    cursor: pointer;
-    /* background-color: transparent; */
+    /* font-size: 15px; */
+    padding:10px 50px 10px 50px;
+    margin-top: 10px;
+    margin-left: 26%;
+    background-color: rgb(32, 177, 265);
+    border: transparent;
+    font-weight: bold;
 }
-/* .login_form
+.login button:hover
 {
-    margin-left:6%;
-    margin-top: 150px;
-    line-height: 30px;
-    font-size: 45px; */
-    /* padding-right:150px ; */
-/* } */
+    transform: scale(1.10);
+}
+.login p
+{
+    margin-top: 40px;
+    margin-left: 17%;
+    font-weight: lighter;
+}
+.link
+{
+    display: flex;
+    justify-content: space-around;
+    height: 70%;
+    width: 70%;
+    margin-left: 15%;
 
+}
+.link div
+{
+    /* margin-left: 20px;
+    margin-top: -5px; */
+    width: 40%;
+    height: 10%;
+    background-color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.google
+{
+background-image: url("https://img.icons8.com/fluency/256/google-logo.png");
+}
+.facebook
+{
+    background-image: url("https://img.icons8.com/color/256/facebook-new.png");
+}

@@ -62,7 +62,7 @@ const Admin = () => {
                 <button>Become a Volunteer</button>
            </div>
         </div>   
-        <div className="footer">
+        <div className="footer1">
             <h2 style={{fontSize:"30px",fontWeight:"normal",fontFamily:" Gotham SSm A,Gotham SSm B"}}>Michel Embry</h2>
             <p style={{fontFamily:" Gotham SSm A,Gotham SSm B",fontStyle:"italic",fontSize:"25px"}}>I don't have to look far to find treasures.I discover them every <br />time I visit a library..!   </p>
             </div>  

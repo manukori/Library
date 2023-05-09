@@ -1,0 +1,49 @@
+body{
+background-color:rgb(185, 131, 140);
+}
+/* .userlist{
+    background-size: cover; 
+     background-color:beige ; 
+    background-color: white;
+} */
+.user-list{
+    /* margin: 10px 10px ; */
+    /* padding: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card-body{
+    /* border: 2px solid black; */
+    padding: 2px 10px 10px 5px ;
+    border-radius: 10px;
+    margin: 30px 20px 0px 30px;
+    background-color: white;
+    box-shadow:0px 0px 7px 0.5px gray;
+    
+}
+.footer button{
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 45px;
+}
+/* .card-body h1{
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    /* padding: 5px; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* background-color:bisque; */
+/* } */ 
+
+.first
+{
+    border-radius: 50%;
+    display:flex;
+    width: 60px;
+    margin: 5px 10px;
+    /* padding: 5px; */
+    text-align: center;
+    background-color:bisque;
+}

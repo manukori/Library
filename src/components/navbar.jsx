@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="navbar">
         <div className="logo">
             <img src="https://www.greenwichlibrary.org/wp-content/themes/greenwich-sage/assets/images/icons/main-logo-green.svg" alt="" />
-            <h1>Greenwich Library</h1>
+            <h1>Library</h1>
         </div>
         <div className="Links">
             <ul>

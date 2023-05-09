@@ -13,12 +13,12 @@ const BookList = () => {
             setBook(data)
         }
         fetchData()
-    })
+    });
     let deleteBook=(id,title)=>{
         fetch(`http://localhost:4000/books/${id}`,{
             method:'DELETE'
         })
-        alert(`${title}has been deleted`)
+        alert(`${title} has been deleted`)
     }
     return ( 
     <div className="Booklist">

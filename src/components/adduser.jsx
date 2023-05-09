@@ -1,13 +1,16 @@
 import Navbar from "./navbar";
 import "../styles/adduser.css"
 import { useRef } from "react";
+// import { useNavigate } from "react-router-dom";
 
 const Adduser = () => {
-    let firstname=useRef(null)
-    let lastname=useRef(null)
-    let email=useRef(null)
-    let contact=useRef(null)
+    let firstname=useRef()
+    let lastname=useRef()
+    let email=useRef()
+    let contact=useRef()
 
+    
+    // let navigate=useNavigate()
     let addUser=(e)=>{
         e.preventDefault()
 
@@ -15,14 +18,16 @@ const Adduser = () => {
             firstname:firstname.current.value,
             lastname:lastname.current.value,
             email:email.current.value,
-            contact:contact.current.value
+            contact:contact.current.value,
         }
         fetch("http://localhost:4000/users",{
             method:'POST',
-            headers:{'contact-Type':'application.json'},
-            body:JSON.stringify(data)
+            headers:{'content-Type':'application/json'},
+            body:JSON.stringify(data),
         })
         alert("USER ADDED")
+        // navigate("/user-list")
+        
     }
     return ( 
     <div className="adduser">
@@ -32,19 +37,20 @@ const Adduser = () => {
             <h1>ADD USERS</h1>
          </div>
         <div className="list">
-            <form action="" onSubmit={addUser}>
-                <label htmlFor="text">FIRST NAME</label><br />
+            <form action=""  >
+                <label htmlFor="name">FIRST NAME</label><br />
                 <input ref={firstname} type="text" placeholder="First Name"/><br />
 
-                <label htmlFor="text">LAST NAME</label><br />
+                <label htmlFor="name">LAST NAME</label><br />
                 <input ref={lastname} type="text"placeholder="Last Name" /><br />
 
-                <label htmlFor="Email">Email</label><br />
+                <label htmlFor="name">Email</label><br />
                 <input ref={email} type="Email" placeholder="@Email" /><br />
 
-                <label htmlFor="Ph.no">Contact</label><br />
-                <input ref={contact} type="tel" placeholder="Contact No." maxLength={10}/><br />
-                <button>ADD USER</button>
+                <label htmlFor="name">Contact</label><br />
+                <input ref={contact} type="tel" placeholder="Contact No." MaxLength={10}/><br />
+
+                <button onClick={addUser} type="Sign in">ADD USER</button>
                 
             </form>
         </div>
